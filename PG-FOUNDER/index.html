@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR_PG</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!--NAVIGATION BAR-->
+    <section id="navigation_bar">
+        <h2>Welcome</h2>
+        <ul>
+            <li> <a href="#signing">Home</a></li>
+            <li><a href="#about">About</a> </li>
+            <li><a href="#why_us">Why us</a> </li>
+            <li><a href="#contact_us">Contact us</a> </li>
+        </ul> 
+    </section>
+
+    <!-- HEADING -->
+     <hr>
+   <section id="head">
+    <div class="h2">
+        <img src="logo.jpg" alt="logo" height="100" width="100%">
+         <h1>PG FOUNDER
+            <marquee behavior="scroll" direction="left" scrollamount="15">
+                <h2>Finding a home away from home has never been easier—start your search today!</h2>
+            </marquee>
+         </h1>
+       
+
+       
+    </div>
+   </section>
+
+    <!-- SIGN UP -->
+    <section id="signing">
+        <div class="box">
+            <div class="up">
+                <form action="" name="formfill" onsubmit="return validation()">
+                    <h2>Register</h2>
+                    <p id="warning"></p>
+                    <div class="inputbox">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" name="username"placeholder="Username">
+                    </div>
+                    <div class="inputbox">
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="email" name="email" placeholder="E-mail">
+                    </div>
+                
+                    <div class="inputbox">
+                        <i class='bx bxs-lock'></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="inputbox">
+                        <i class='bx bxs-lock'></i>
+                        <input type="password" name="cpassword" placeholder="Confirm Password">
+                    </div>
+                    <div class="button">
+                        <button class="btn">REGISTER</button>
+                    </div>
+                    <a href="login.html">Login</a>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <div class="popup" id="popup">
+        <h2>Thank you!</h2>
+        <i class='bx bxs-check-circle'></i>
+        <p>your registeration was succesful.</p>
+        <a href="login.html"><button onclick="CloseSlide()">OK</button></a>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="a2">
+            <h2>About Us</h2>
+            <p>Welcome to PG Founder!
+                Finding the perfect place to call home can be overwhelming, but we’re here to make it simple and hassle-free. PG Finder is your one-stop solution for discovering the best Paying Guest accommodations around you, tailored to fit your needs and lifestyle. Whether you’re a student, working professional, or someone new to the city, our platform connects you to verified PGs with all the amenities you desire.
+                
+                With an intuitive search feature and detailed listings, we ensure you find a safe and comfortable place to stay—without the stress. Explore options by location, budget, and facilities, and get real-time availability to plan your move seamlessly.
+            </p>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why_us">
+        <div class="w2">
+            <h2>Why Us?</h2>
+            <ul>
+                <li>Verified Listings: Trustworthy accommodations, verified by us.</li>
+                <li>Detailed Information: Know all about the amenities, rules, and pricing before you decide.</li>
+                <li>User Reviews: Get insights from real experiences to make an informed decision.</li>
+                <li>Simplified Search: Filter options by preferences like food availability, shared or private rooms, and more.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact_us">
+        <div class="contact-form">
+            <h2>SEND US A MESSAGE</h2>
+            <form id="pgContactForm">
+                <div class="form-group">
+                    <div style="width: 30%;">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div style="width: 30%;">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div style="width: 30%;">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" style="width: 100%;">Message</label>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                </div>
+                <button type="button" onclick="submitForm()">SUBMIT</button>
+            </form>
+    </section>
+
+     <!-- Footer Section -->
+     <footer>
+        <p>&copy; 2024 PG Founder. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.17.0/dist/xlsx.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
