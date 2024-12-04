@@ -6,6 +6,8 @@
     <title>PG-list</title>
     <link rel="icon" type="image/x-icon" href="logo.jpg">
      <link rel="stylesheet" href="collection.css">
+     <link rel="stylesheet" href="search.css">
+     <link rel="stylesheet" href="filter.css">
 
 </head>
 <body>
@@ -13,18 +15,64 @@
     <header>
         <p>Welcome to PG Founder's Collection</p>
     </header>
+        
+        <div class="filter-bar">
+
+            <div class="filter-btn">
+              <button type="button">
+                <i class="fas fa-filter-alt"></i> Filter
+              </button>
+            </div>
+            
+            <div class="filter">
+              <label for="category">Meals/ Day</label>
+              <select id="category">
+                <option value="Single">No Option</option>
+                <option value="Veg">1 Meal</option>
+                <option value="Non-Veg">2 Meals</option>
+                <option value="Veg">3 Meals</option>
+              </select>
+            </div>
+          
+            <div class="filter">
+              <label for="price">Price:</label>
+              <select id="price">
+                <option value="Single">No Option</option>
+                <option value="5000">3000-6000</option>
+                <option value="8000">6000-9000</option>
+                <option value="10000">9000-12000</option>
+                </select>
+                </div>
+                <div class="filter">
+                    <label for="category">Person</label>
+                    <select id="category">
+                        <option value="Single">No Option</option>
+                      <option value="Single">Single</option>
+                      <option value="Two">Two</option>
+                      <option value="Fpur">Four</option>
+                    </select>
+                  </div>
+                  <div class="filter">
+                    <label for="category">BHK</label>
+                    <select id="category">
+                        <option value="Single">No Option</option>
+                      <option value="1">1BHK</option>
+                      <option value="2">2BHK</option>
+
+                    </select>
+                  </div>
+          </div>
 
     <!-- COLLECTION PART -->
     <section id="collection">
         <div class="outer">
                         <div class="inner">
                 <a href="index.html">
-                    <img src="g.jpg" alt="1" width="100%" height="90%"></a>
+                    <img src="PG1.jpg" alt="1" width="100%" height="90%"></a>
                 <div class="details">
                     <h1>PG-1</h1>
-                    <p>Location: XYZ</p>
-                    <p>Price: $500/month</p>
-                    <p>Facilities: WiFi, AC, Meals</p>
+                    <p>Location: Lane no. 4C, Post Office Rd, Clement Town, Dehradun</p>
+                    <p>Price: Rs 8000/month</p>
                 </div>
                 <!-- Hidden hover link -->
             <a href="pg1.html" class="hover-link">View Details</a>
@@ -33,12 +81,11 @@
         
         <div class="outer">
                         <div class="inner">
-                <a href="index.html"><img src="g.jpg" alt="2" width="100%" height="90%"></a>
+                <a href="index.html"><img src="PG2.jpg" alt="2" width="100%" height="90%"></a>
                 <div class="details">
                     <h1>PG-2</h1>
-                    <p>Location: XYZ</p>
-                    <p>Price: $700/month</p>
-                    <p>Facilities: WiFi, AC, Meals</p>
+                    <p>Location: New Basti, Clement Town, Dehradun</p>
+                    <p>Price: Rs 7000/month</p>
                 </div>
                 <!-- Hidden hover link -->
             <a href="pg2.html" class="hover-link">View Details</a>
@@ -47,12 +94,11 @@
         
         <div class="outer">
                         <div class="inner">
-                <a href="index.html"><img src="g.jpg" alt="3" width="100%" height="90%"></a>
+                <a href="index.html"><img src="PG3.jpg" alt="3" width="100%" height="90%"></a>
                 <div class="details">
                     <h1>PG-3</h1>
-                    <p>Location: XYZ</p>
-                    <p>Price: $500/month</p>
-                    <p>Facilities: WiFi, AC, Meals</p>
+                    <p>Location: Bharuwala Colony, Clement Town, Dehradun</p>
+                    <p>Price:Rs 10000/month</p>
                 </div>
                 <!-- Hidden hover link -->
             <a href="pg3.html" class="hover-link">View Details</a>
@@ -61,12 +107,11 @@
         
         <div class="outer">
                         <div class="inner">
-                <a href="index.html"><img src="g.jpg" alt="4" width="100%" height="90%"></a>
+                <a href="index.html"><img src="PG4.jpg" alt="4" width="100%" height="90%"></a>
                 <div class="details">
                     <h1>PG-4</h1>
-                    <p>Location: XYZ</p>
-                    <p>Price: $500/month</p>
-                    <p>Facilities: WiFi, AC, Meals</p>
+                    <p>Location: Subhash Nagar, Dehradun, Bharu Wala Grant</p>
+                    <p>Price: Rs 10000/month</p>
                 </div>
                 <!-- Hidden hover link -->
             <a href="pg4.html" class="hover-link">View Details</a>
@@ -76,12 +121,11 @@
         <div class="outer">
             
             <div class="inner">
-                <a href="index.html"><img src="g.jpg" alt="5" width="100%" height="90%"></a>               
+                <a href="index.html"><img src="PG5.5.jpg" alt="5" width="100%" height="90%"></a>               
                 <div class="details">
                     <h1>PG-5</h1>
-                    <p>Location: XYZ</p>
-                    <p>Price: $700/month</p>
-                    <p>Facilities: WiFi, AC, Meals</p>
+                    <p>Location: Rinku Rishi, 7XFW+422, Subhash Nagar, Dehradun, Bharu Wala Grant</p>
+                    <p>Price: Rs 7000/month</p>
                 </div>
                 <!-- Hidden hover link -->
             <a href="pg5.html" class="hover-link">View Details</a>
@@ -90,12 +134,11 @@
         
         <div class="outer">
                         <div class="inner">
-                <a href="index.html"><img src="g.jpg" alt="6" width="100%" height="90%"></a>
+                <a href="index.html"><img src="PG6.jpg" alt="6" width="100%" height="90%"></a>
                 <div class="details">
                     <h1>PG-6</h1>
-                    <p>Location: XYZ</p>
-                    <p>Price: $500/month</p>
-                    <p>Facilities: WiFi, AC, Meals</p>
+                    <p>Location: Banjarewala Mafi</p>
+                    <p>Price: Rs 5000/month</p>
                 </div>
                 <!-- Hidden hover link -->
             <a href="pg6.html" class="hover-link">View Details</a>
@@ -104,11 +147,11 @@
         
         <div class="outer">
                        <div class="inner">
-                 <a href="index.html"><img src="g.jpg" alt="7" width="100%" height="90%"></a>
+                 <a href="index.html"><img src="PG3.jpg" alt="7" width="100%" height="90%"></a>
                  <div class="details">
                     <h1>PG-7</h1>
                     <p>Location: XYZ</p>
-                    <p>Price: $700/month</p>
+                    <p>Price: Rs 7000/month</p>
                     <p>Facilities: WiFi, AC, Meals</p>
                 </div>
             </div>
@@ -116,11 +159,11 @@
         
         <div class="outer">
                         <div class="inner">
-                <a href="index.html"><img src="g.jpg" alt="8" width="100%" height="90%"></a>
+                <a href="index.html"><img src="PG4.jpg" alt="8" width="100%" height="90%"></a>
                 <div class="details">
                     <h1>PG-8</h1>
                     <p>Location: XYZ</p>
-                    <p>Price: $500/month</p>
+                    <p>Price: Rs 5000/month</p>
                     <p>Facilities: WiFi, AC, Meals</p>
                 </div>
             </div>
@@ -128,11 +171,11 @@
         
         <div class="outer">
                         <div class="inner">
-                <a href="index.html"><img src="g.jpg" alt="9" width="100%" height="90%"></a>
+                <a href="index.html"><img src="PG6.jpg" alt="9" width="100%" height="90%"></a>
                 <div class="details">
                     <h1>PG-9</h1>
                     <p>Location: XYZ</p>
-                    <p>Price: $500/month</p>
+                    <p>Price: Rs 5000/month</p>
                     <p>Facilities: WiFi, AC, Meals</p>
                 </div>
             </div>
@@ -141,7 +184,7 @@
         <div class="outer">
            
             <div class="inner">
-                 <a href="index.html"><img src="g.jpg" alt="10" width="100%" height="90%"></a>             
+                 <a href="index.html"><img src="PG2.jpg" alt="10" width="100%" height="90%"></a>             
                  <div class="details">
                     <h1>PG-10</h1>
                     <p>Location: XYZ</p>
@@ -154,7 +197,7 @@
         <div class="outer">
             <div class="inner">
     <a href="index.html">
-        <img src="g.jpg" alt="1" width="100%" height="90%"></a>
+        <img src="PG1.jpg" alt="1" width="100%" height="90%"></a>
     <div class="details">
         <h1>PG-11</h1>
         <p>Location: XYZ</p>
@@ -166,7 +209,7 @@
 
 <div class="outer">
             <div class="inner">
-    <a href="index.html"><img src="g.jpg" alt="2" width="100%" height="90%"></a>
+    <a href="index.html"><img src="PG1.jpg" alt="2" width="100%" height="90%"></a>
     <div class="details">
         <h1>PG-12</h1>
         <p>Location: XYZ</p>
@@ -178,7 +221,7 @@
 
 <div class="outer">
             <div class="inner">
-    <a href="index.html"><img src="g.jpg" alt="3" width="100%" height="90%"></a>
+    <a href="index.html"><img src="PG2.jpg" alt="3" width="100%" height="90%"></a>
     <div class="details">
         <h1>PG-13</h1>
         <p>Location: XYZ</p>
@@ -190,7 +233,7 @@
 
 <div class="outer">
             <div class="inner">
-    <a href="index.html"><img src="g.jpg" alt="4" width="100%" height="90%"></a>
+    <a href="index.html"><img src="PG4.jpg" alt="4" width="100%" height="90%"></a>
     <div class="details">
         <h1>PG-14</h1>
         <p>Location: XYZ</p>
@@ -203,7 +246,7 @@
 <div class="outer">
 
 <div class="inner">
-    <a href="index.html"><img src="g.jpg" alt="5" width="100%" height="90%"></a>               
+    <a href="index.html"><img src="PG6.jpg" alt="5" width="100%" height="90%"></a>               
     <div class="details">
         <h1>PG-15</h1>
         <p>Location: XYZ</p>
@@ -215,7 +258,7 @@
 
 <div class="outer">
             <div class="inner">
-    <a href="index.html"><img src="g.jpg" alt="6" width="100%" height="90%"></a>
+    <a href="index.html"><img src="PG2.jpg" alt="6" width="100%" height="90%"></a>
     <div class="details">
         <h1>PG-16</h1>
         <p>Location: XYZ</p>
@@ -227,7 +270,7 @@
 
 <div class="outer">
            <div class="inner">
-     <a href="index.html"><img src="g.jpg" alt="7" width="100%" height="90%"></a>
+     <a href="index.html"><img src="PG4.jpg" alt="7" width="100%" height="90%"></a>
      <div class="details">
         <h1>PG-17</h1>
         <p>Location: XYZ</p>
@@ -239,7 +282,7 @@
 
 <div class="outer">
             <div class="inner">
-    <a href="index.html"><img src="g.jpg" alt="8" width="100%" height="90%"></a>
+    <a href="index.html"><img src="PG2.jpg" alt="8" width="100%" height="90%"></a>
     <div class="details">
         <h1>PG-18</h1>
         <p>Location: XYZ</p>
@@ -251,7 +294,7 @@
 
 <div class="outer">
             <div class="inner">
-    <a href="index.html"><img src="g.jpg" alt="9" width="100%" height="90%"></a>
+    <a href="index.html"><img src="PG6.jpg" alt="9" width="100%" height="90%"></a>
     <div class="details">
         <h1>PG-19</h1>
         <p>Location: XYZ</p>
@@ -264,7 +307,7 @@
 <div class="outer">
 
 <div class="inner">
-     <a href="index.html"><img src="g.jpg" alt="10" width="100%" height="90%"></a>             
+     <a href="index.html"><img src="PG5.5.jpg" alt="10" width="100%" height="90%"></a>             
      <div class="details">
         <h1>PG-20</h1>
         <p>Location: XYZ</p>
@@ -276,7 +319,7 @@
 <div class="outer">
     <div class="inner">
 <a href="index.html">
-<img src="g.jpg" alt="1" width="100%" height="90%"></a>
+<img src="PG3.jpg" alt="1" width="100%" height="90%"></a>
 <div class="details">
 <h1>PG-21</h1>
 <p>Location: XYZ</p>
@@ -288,7 +331,7 @@
 
 <div class="outer">
     <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="2" width="100%" height="90%"></a>
+<a href="index.html"><img src="PG2.jpg" alt="2" width="100%" height="90%"></a>
 <div class="details">
 <h1>PG-22</h1>
 <p>Location: XYZ</p>
@@ -300,7 +343,7 @@
 
 <div class="outer">
     <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="3" width="100%" height="90%"></a>
+<a href="index.html"><img src="PG6.jpg" alt="3" width="100%" height="90%"></a>
 <div class="details">
 <h1>PG-23</h1>
 <p>Location: XYZ</p>
@@ -312,7 +355,7 @@
 
 <div class="outer">
     <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="4" width="100%" height="90%"></a>
+<a href="index.html"><img src="PG3.jpg" alt="4" width="100%" height="90%"></a>
 <div class="details">
 <h1>PG-24</h1>
 <p>Location: XYZ</p>
@@ -325,7 +368,7 @@
 <div class="outer">
 
 <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="5" width="100%" height="90%"></a>               
+<a href="index.html"><img src="PG1.jpg" alt="5" width="100%" height="90%"></a>               
 <div class="details">
 <h1>PG-25</h1>
 <p>Location: XYZ</p>
@@ -337,7 +380,7 @@
 
 <div class="outer">
     <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="6" width="100%" height="90%"></a>
+<a href="index.html"><img src="PG4.jpg" alt="6" width="100%" height="90%"></a>
 <div class="details">
 <h1>PG-26</h1>
 <p>Location: XYZ</p>
@@ -349,7 +392,7 @@
 
 <div class="outer">
    <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="7" width="100%" height="90%"></a>
+<a href="index.html"><img src="PG2.jpg" alt="7" width="100%" height="90%"></a>
 <div class="details">
 <h1>PG-27</h1>
 <p>Location: XYZ</p>
@@ -361,7 +404,7 @@
 
 <div class="outer">
     <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="8" width="100%" height="90%"></a>
+<a href="index.html"><img src="PG6.jpg" alt="8" width="100%" height="90%"></a>
 <div class="details">
 <h1>PG-28</h1>
 <p>Location: XYZ</p>
@@ -373,7 +416,7 @@
 
 <div class="outer">
     <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="9" width="100%" height="90%"></a>
+<a href="index.html"><img src="PG1.jpg" alt="9" width="100%" height="90%"></a>
 <div class="details">
 <h1>PG-29</h1>
 <p>Location: XYZ</p>
@@ -386,11 +429,11 @@
 <div class="outer">
 
 <div class="inner">
-<a href="index.html"><img src="g.jpg" alt="10" width="100%" height="90%"></a>             
+<a href="index.html"><img src="PG5.jpg" alt="10" width="100%" height="90%"></a>             
 <div class="details">
 <h1>PG-30</h1>
 <p>Location: XYZ</p>
-<p>Price: $500/month</p>
+<p>Price: RS 500o /month</p>
 <p>Facilities: WiFi, AC, Meals</p>
 </div>
 </div>

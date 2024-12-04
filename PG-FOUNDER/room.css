@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.slider {
+    position: relative;
+    width: 500px; /* Increased width */
+    height: 500px; /* Increased height */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden;
+    border-radius: 8px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the full image is visible */
+    flex-shrink: 0;
+}
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.details {
+    margin-top: 20px;
+}
+.details h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.details p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+.rating {
+    color: #f39c12;
+    font-size: 18px;
+}
+.buttons {
+    margin-top: 20px;
+}
+.buttons button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Review section styles */
+.reviews {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+.reviews h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+.review-form input, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+.review-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.review-form button:hover {
+    background-color: #218838;
+}
+.review-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.review-item p {
+    margin: 5px 0;
+}
+.review-item .name {
+    font-weight: bold;
+}
+.review-item .rating {
+    color: #f39c12;
+}
+
+/* Rating stars */
+.stars input[type="radio"] {
+    display: none;
+}
+.stars label {
+    font-size: 30px;
+    
+    color: #f39c12;
+    cursor: pointer;
+}
+.stars input[type="radio"]:checked ~ label {
+    color: #ddd;
+}
